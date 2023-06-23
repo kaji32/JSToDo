@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>ToDo List</h1>
+    </header>
+    <main>
+        <div>
+            <input type="text" id="input">
+            <button id="addButton">追加</button>
+        </div>
+        
+        <div>
+            <div>
+                <h2>ToDoリスト</h2>
+                <table  border="1">
+                    <thead>
+                        <tr>
+                            <td class="itemName">タスク名</td>
+                            <td class="itemCreatedAt">作成日時</td>
+                            <td class="itemComplete"></td>
+                        </tr>
+                    </thead>
+                    <tbody id="todoList"></tbody>
+                </table>
+            </div>
+            <div>
+                <h2>完了済み</h2>
+                <table  border="1">
+                    <thead>
+                        <tr>
+                            <td class="itemName">タスク名</td>
+                            <td class="itemCreatedAt">作成日時</td>
+                            <td class="itemComplete">完了日時</td>
+                        </tr>
+                    </thead>
+                    <tbody id="completedList"></tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
